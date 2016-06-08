@@ -1,0 +1,332 @@
+/* Basic */
+header, p, footer{
+    font-family:'Source Sans Pro'; 
+    width: auto;
+    text-align:center     
+}
+
+body {
+    line-height:1.5;
+}
+
+header{
+    font-size: 40pt;
+    position: relative;
+    top: 0.5px;
+    right: 10px;
+}
+
+p{
+    font-size: 20pt;
+}
+
+/* nav */
+.jumbotron {
+    height: 100vh;
+    text-align: center;
+    
+}
+
+/*home*/
+#home{
+    background-image: url("D:\\courses\\4.5th\\Digital\\Homework3\\pic\\photo1.jpg");
+    background-size: cover;  
+    color: black;
+}
+
+#home .jumbotron .container{
+    padding-top: 150px;
+}
+
+#home .transbox {
+    margin: 10px 30px 0.5px 10px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+#home .transbox p {
+    margin: 5% 5% 2% 5%;
+    font-weight: bold;
+    color: black;
+}
+
+
+
+/*cs*/
+#cs{
+    background: url("D:/courses/4.5th/Digital/Homework3/pic/ai.jpg");
+    background-size: cover;   
+    color: black;
+}
+
+#cs .jumbotron .container{
+    padding-top: 40px;
+}
+
+#cs .transbox {
+    margin: 10px 30px 0.5px 10px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+#cs .transbox p {
+    margin: 5% 5% 0.5% 5%;
+    font-weight: bold;
+    color: black;
+}
+
+
+
+/*ntucsie*/
+#ntucsie{
+    background: url("D:\\courses\\4.5th\\Digital\\Homework3\\pic\\go.png");
+    background-size: cover;   
+    color: black;
+}
+
+#ntucsie .jumbotron .container{
+    padding-top: 50px;
+}
+
+#ntucsie .transbox {
+    margin: 10px 30px 0.5px 10px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+#ntucsie .transbox p {
+    margin: 5% 5% 2% 5%;
+    font-weight: bold;
+    color: black;
+}
+
+
+
+
+/*help*/
+#help{
+    background: url("D:\\courses\\4.5th\\Digital\\Homework3\\pic\\star.jpg");
+    background-size: cover;  
+    color: white;
+}
+
+
+a {
+    transition: border-bottom-color 0.2s ease, color 0.2s ease;
+	text-decoration: none;
+    color: #b00000;
+	border-bottom: dotted 1px rgba(88, 88, 88, 0.5);	
+}
+    
+
+a:hover {
+	border-bottom-color: transparent;
+	color: #f2849e !important;
+}
+
+
+#nav {
+		position: absolute;
+		right: 50px;
+		top: 20px;
+
+}
+
+    #nav ul {
+		margin: 0;
+	}
+
+	    #nav ul li {
+	        display: inline-block;
+		    margin-left: 5px;
+		    font-size: 16pt;
+	    }
+
+/*footer*/
+#footer {
+    display: block;
+    margin: 0;
+    width: 100%;
+    height: 250px;
+    padding: 20px 0 0px 0 ;
+	background-color: #1d242a;
+	text-align: center;
+    border: 0;
+    font-size: 100%;
+}
+
+#footer li{
+    display: inline-block;
+    margin-left: 10px;
+    word-spacing: normal;
+    font-size: 16pt;
+}
+
+		#footer .icons {
+			font-size: 1.25em;
+		}
+
+			#footer .icons a {
+				color: rgba(255, 255, 255, 0.5);
+			}
+
+				#footer .icons a:hover {
+					color: #fff;
+				}
+
+		#footer .copyright {
+			color: rgba(255, 255, 255, 0.5);
+			font-size: 0.8em;
+			letter-spacing: 0.225em;
+			list-style: none;
+			padding: 5;
+			text-transform: uppercase;
+		}
+
+			#footer .copyright li {
+				border-left: solid 1px rgba(255, 255, 255, 0.5);
+				display: inline-block;
+				line-height: 1em;
+				margin-left: 1em;
+				padding-left: 1em;
+			}
+
+				#footer .copyright li:first-child {
+					border-left: 0;
+					margin-left: 0;
+					padding-left: 0;
+				}
+
+				#footer .copyright li a {
+					color: inherit;
+				}
+
+					#footer .copyright li a:hover {
+						color: #fff;
+					}
+
+
+
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Noto Sans TC', sans-serif;
+}
+
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	width: 85%;
+}
+
+.container-fluid {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+.row:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+[class^="col-"] {
+	float: left;
+	width: 100%;
+}
+
+
+/* 桌上型平板與小螢幕 螢幕限制 小於等於 768px 小於等於 991px*/
+
+@media screen and ( min-width:768px) and ( max-width:991px) {
+	.col-sm-1 {
+		width: calc(100% * 1 / 12);
+	}
+	.col-sm-2 {
+		width: calc(100% * 2 / 12);
+	}
+	.col-sm-3 {
+		width: calc(100% * 3 / 12);
+	}
+	.col-sm-4 {
+		width: calc(100% * 4 / 12);
+	}
+	.col-sm-5 {
+		width: calc(100% * 5 / 12);
+	}
+	.col-sm-6 {
+		width: calc(100% * 6 / 12);
+	}
+	.col-sm-7 {
+		width: calc(100% * 7 / 12);
+	}
+	.col-sm-8 {
+		width: calc(100% * 8 / 12);
+	}
+	.col-sm-9 {
+		width: calc(100% * 9 / 12);
+	}
+	.col-sm-10 {
+		width: calc(100% * 10 / 12);
+	}
+	.col-sm-11 {
+		width: calc(100% * 11 / 12);
+	}
+	.col-sm-12 {
+		width: calc(100% * 12 / 12);
+	}
+}
+
+
+/* 桌上型電腦螢幕 螢幕限制 大於等於 992px */
+
+@media screen and ( min-width:992px) {
+	.col-md-1 {
+		width: calc(100% * 1 / 12);
+	}
+	.col-md-2 {
+		width: calc(100% * 2 / 12);
+	}
+	.col-md-3 {
+		width: calc(100% * 3 / 12);
+	}
+	.col-md-4 {
+		width: calc(100% * 4 / 12);
+	}
+	.col-md-5 {
+		width: calc(100% * 5 / 12);
+	}
+	.col-md-6 {
+		width: calc(100% * 6 / 12);
+	}
+	.col-md-7 {
+		width: calc(100% * 7 / 12);
+	}
+	.col-md-8 {
+		width: calc(100% * 8 / 12);
+	}
+	.col-md-9 {
+		width: calc(100% * 9 / 12);
+	}
+	.col-md-10 {
+		width: calc(100% * 10 / 12);
+	}
+	.col-md-11 {
+		width: calc(100% * 11 / 12);
+	}
+	.col-md-12 {
+		width: calc(100% * 12 / 12);
+	}
+}
+
+
+
